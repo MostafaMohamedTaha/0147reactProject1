@@ -7,8 +7,13 @@ module.exports = {
     flowbite.content(),
   ],
   theme: {
-    extend: {},
-  },
+    extend: {
+        fontFamily: {
+        sans: ['Playwrite CU','Helvetica', 'Arial', 'sans-serif', 'cursive'], // default
+        arabic: ['Cairo', 'sans-serif'], // Arabic-specific font
+        },
+    },
+},
   plugins: [
     require('flowbite/plugin'),
     flowbite.plugin(),
